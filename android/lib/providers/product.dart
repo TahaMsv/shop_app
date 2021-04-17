@@ -29,7 +29,7 @@ class Product with ChangeNotifier {
     final oldStatus = isFavorite;
     isFavorite = !isFavorite;
     notifyListeners();
-    final url = 'https://flutter-shop-app-f098a-default-rtdb.firebaseio.com/products/$id.json';
+    final url = 'https://flutter-update.firebaseio.com/products/$id.json';
     try {
       final response = await http.patch(
         url,
